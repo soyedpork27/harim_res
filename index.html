@@ -27,6 +27,9 @@
   <!-- 아이콘 폰트 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
+  <!-- 자바스크립트 -->
+  <script src="./script/script.js"></script>
+
 
   <!-- 스와이퍼 슬라이드 서식 -->
   <link rel="stylesheet" href="./css/swiper.css" type="text/css">
@@ -150,7 +153,7 @@
         <h2 class="hid">제목</h2>
         <article>
           <h2>사료 무료체험</h2>
-          <img src="./images/sns21.jpg" alt="더 리얼 밀 리뷰를 부탁해">
+          <img src="./images/sns21.jpg" alt="더 리얼 밀 리뷰를 부탁해" id="random_picture">
           <div class="free_ex_right">
             <h2><img src="./images/gold_icon_7.png" alt="무료"><br>
             하림펫푸드 <strong>사료 무료체험</strong></h2>
@@ -342,6 +345,16 @@
         return;                         // 프로그램 종료해라
       }
     }
+
+
+    let random = Math.ceil(Math.random()*2);
+    let int = random;
+
+
+    document.getElementById(`random_picture`).src=`./images/sns2${int}.jpg`
+
+
+
 
   </script>
 
